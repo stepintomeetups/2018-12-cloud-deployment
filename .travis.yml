@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+jobs:  
+  include:
+    - stage: "Tests"
+      name: "Unit Tests"
+      script: npm run unit-test
+    - script: npm run integration-test
+      name: "Integration Tests"

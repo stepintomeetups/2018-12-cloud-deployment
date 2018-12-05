@@ -1,0 +1,29 @@
+{
+  "name": "cloudapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "unit-test": "mocha test/unit.mocha.js --exit",
+    "integration-test": "mocha test/integration.mocha.js --exit",
+    "restart": "pm2 restart all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stepintomeetups/03-18-dec-cloud-deployment.git"
+  },
+  "author": "Lajos Kovacs <kovacs.lajos1218@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stepintomeetups/03-18-dec-cloud-deployment/issues"
+  },
+  "homepage": "https://github.com/stepintomeetups/03-18-dec-cloud-deployment#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
